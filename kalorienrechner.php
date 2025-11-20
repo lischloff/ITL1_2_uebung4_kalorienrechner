@@ -24,7 +24,14 @@
     $gewicht = (float)($_REQUEST["gewicht"]);
     }
 
-
+  //Berechnen des Kalorienbedarfs
+    if ($geschlecht == 0){
+        //Frau
+        $kalorienbedarf = 655.1 + (9.6 * $gewicht) + (1.8 * $größe) + (4.7 * $alter);
+    } else {
+        //Mann
+         $kalorienbedarf = 66.47 + (13.7 * $gewicht) + (5 * $größe) + (6.8 * $alter);
+    }
     ?>
 
     <form method = "post" >
@@ -46,5 +53,15 @@
 
   <input type="submit" name="submit" value="Berechnen"><br><br>
     </form>
+
+    <?php
+    echo "<h2>Ihre Eingaben sind: </h2>";
+    echo "Geschlecht: " . ($geschlecht == 1 ? "Männlich" : "Weiblich") . "<br>";
+    echo "Alter: $alter Jahre <br>";
+    echo "Gewicht: $gewicht kg <br>";
+    echo "Größe $größe cm <br>";
+    echo "<h2>Kalorienbedarf:</h2>";
+    echo "Ihr Kalorienbedarf beträgt ca. " . round($kalorienbedarf, 2) . "kcal pro Tag";
+    ?>
 </body>
 </html>
