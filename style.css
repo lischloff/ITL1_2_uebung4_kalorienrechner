@@ -1,0 +1,72 @@
+/* Allgemeines Layout */
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+/* Container für Formular */
+.container {
+    width: 450px;
+    margin: 20px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Formularfelder */
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 6px;
+    border: 1px solid #aaa;
+}
+
+/* Submit Button */
+input[type="submit"] {
+    margin-top: 25px;
+    background: #4caf50;
+    border: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+input[type="submit"]:hover {
+    background: #45a049;
+}
+
+/* Ergebnisbox */
+.ergebnis {
+    width: 450px;
+    margin: 25px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.ergebnis h2 {
+    margin-top: 0;
+    color: #222;
+}
+
+.ergebnis strong {
+    color: #a80000;
+}

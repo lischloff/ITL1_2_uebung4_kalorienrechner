@@ -13,3 +13,8 @@ Author: Schloffer Lisa
 3. Dann ging es darum die Aktivitäten, deren PAL Faktoren und den Rechner einzubauen.
 ![Screenshot Eigabefelder](assets/pal_berechner.png)
 
+4. Zum Schluss habe ich noch das Design mit css angepasst.
+![Screenshot Eigabefelder](assets/rechner_mit_design1.png)
+![Screenshot Eigabefelder](assets/rechner_mit_design2.png)
+
+
