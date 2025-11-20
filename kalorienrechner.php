@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aufgabe4</title>
+</head>
+<body>
+    <h1>Kalorienrechner</h1>
+
+    <?php
+    // Werte der Variablen setzen
+    $geschlecht = 0;
+    $alter = 0;
+    $größe = 0;
+    $gewicht = 0;
+
+    if (isset($_REQUEST["submit"])) {
+
+  //Eingabe aus dem Formular in Zahlen umwandeln
+    $geschlecht = (float)($_REQUEST["geschlecht"]);
+    $alter = (float)($_REQUEST["alter"]);
+    $größe = (float)($_REQUEST["größe"]);
+    $gewicht = (float)($_REQUEST["gewicht"]);
+    }
+
+
+    ?>
+
+    <form method = "post" >
+        <label for="geschlecht">Geschlecht:</label><br>
+         <select name="geschlecht" id="geschlecht" required>
+            <option value="">Bitte wählen</option>
+            <option value="1">Männlich</option>
+            <option value="0">Weiblich</option>
+        </select><br>
+  
+        <label for="alter">Alter:</label><br>
+        <input type="text" id="alter" name="alter" value="<?=$alter?>"><br>
+  
+        <label for="größe">Größe:</label><br>
+        <input type="text" id="größe" name="größe" value="<?=$größe?>"><br>
+
+        <label for="gewicht">Gewicht:</label><br>
+        <input type="text" id="gewicht" name="gewicht" value="<?=$gewicht?>"><br><br>
+
+  <input type="submit" name="submit" value="Berechnen"><br><br>
+    </form>
+</body>
+</html>
