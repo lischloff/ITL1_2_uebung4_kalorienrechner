@@ -10,3 +10,6 @@ Author: Schloffer Lisa
 2. Dann habe ich die Kalorienbedarf-Rechnungen gemacht und eine Ausgabe dafür.
 ![Screenshot Eigabefelder](assets/kalorienrechner.png)
 
+3. Dann ging es darum die Aktivitäten, deren PAL Faktoren und den Rechner einzubauen.
+![Screenshot Eigabefelder](assets/pal_berechner.png)
+
