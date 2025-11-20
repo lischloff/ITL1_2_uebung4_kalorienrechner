@@ -46,10 +46,10 @@
         <input type="text" id="alter" name="alter" value="<?=$alter?>"><br>
   
         <label for="größe">Größe:</label><br>
-        <input type="text" id="größe" name="größe" value="<?=$größe?>"><br>
+        <input type="text" id="größe" name="größe" step="0.1" value="<?=$größe?>"><br>
 
         <label for="gewicht">Gewicht:</label><br>
-        <input type="text" id="gewicht" name="gewicht" value="<?=$gewicht?>"><br><br>
+        <input type="text" id="gewicht" name="gewicht" step="0.1" value="<?=$gewicht?>"><br><br>
 
   <input type="submit" name="submit" value="Berechnen"><br><br>
     </form>
