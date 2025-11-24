@@ -88,10 +88,10 @@
     //Berechnen des Kalorienbedarfs
     if ($geschlecht == 0) {
         //Frau
-        $kalorienbedarf = 655.1 + (9.6 * $gewicht) + (1.8 * $größe) + (4.7 * $alter);
+        $kalorienbedarf = 655.1 + (9.6 * $gewicht) + (1.8 * $größe) - (4.7 * $alter);
     } else {
         //Mann
-        $kalorienbedarf = 66.47 + (13.7 * $gewicht) + (5 * $größe) + (6.8 * $alter);
+        $kalorienbedarf = 66.47 + (13.7 * $gewicht) + (5 * $größe) - (6.8 * $alter);
     }
 
     //Berechnung der gesamt Aktivitäten & der Zeit des Schalfens
